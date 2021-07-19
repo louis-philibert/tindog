@@ -1,0 +1,315 @@
+/* ---------------------------------
+1. GENERALE
+--------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    /*le scroll devient fluide*/
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+/*************************
+          CONTAINER
+**************************/
+
+.container-fluid{
+    padding: 3% 15% 3%;
+}
+
+/*************************
+          POLICE
+**************************/
+
+h1{  
+    font-family: 'Montserrat-black', sans-serif;  
+    font-size: 3rem;  
+    line-height: 1.5;
+    font-weight: 900;
+    color: #fff;
+}
+
+h2{
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+/*************************
+          COLOR
+**************************/
+
+.violetine{
+    background-color: #E344B1;
+}
+
+.pink{
+    background-color: #E344B1;
+}
+
+.rose{
+    background-color: #fd859b;
+}
+
+.white{
+    color: #fff;
+}
+
+/* ---------------------------------
+2. HEADER
+--------------------------------- */
+
+#text-main{
+    margin-top: 5em;
+}
+
+.text{
+    margin-bottom: 1em;
+}
+
+/*************************
+          NAVBAR
+**************************/
+
+.navbar{
+    padding:0 0 1.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat-light', sans-serif;
+}
+
+/*************************
+          IMAGE-MAIN
+**************************/
+#title{
+    height: 100vh;
+}
+
+.title-image{
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+img.title-image:hover {
+    animation: shake 0.62s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+@media (max-width:760px) {
+    
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        width: 50%;
+        position: static;
+        transform: rotate(0);
+        margin-top: 4%;
+    }
+}
+
+/*************************
+          BUTTONS
+**************************/
+
+.dowload-button{
+    margin: 5% 3% 5% 0%;
+}
+
+/* ---------------------------------
+3. SECTION(Features)
+--------------------------------- */
+
+#features{
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+/*************************
+          ICONS
+**************************/
+
+.icon{
+    color: #fd859b;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #E344B1;
+}
+
+/* ---------------------------------
+4. SECTION(Testimonials)
+--------------------------------- */
+
+#testimonials{
+    text-align: center;
+    background-color: #fd859b;
+    color: #fff;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/*************************
+          IMAGE
+**************************/
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* ---------------------------------
+5. SECTION(press)
+--------------------------------- */
+
+#press{
+    text-align: center;
+    padding: 3% 0 3% 0;
+}
+
+/*************************
+          LOGO
+**************************/
+
+.press-logo{
+    width: 12%;
+    margin: 20px 20px 50px;
+    vertical-align: bottom;
+}
+
+.press-logo:hover{
+    width: 22%;
+}
+
+/* ---------------------------------
+6. SECTION(pricing)
+--------------------------------- */
+
+#pricing{
+    background-color: #fd859b;
+    text-align: center;
+}
+
+.pricing-cards{
+    text-align: -webkit-center;
+}
+
+.cards:hover{
+    box-shadow: -7px 6px 13px -1px rgba(40, 40, 40, 0.55);
+    transition: all 0.5s ease;
+    transform: translateY(-1.5rem) scale(1.05);
+}
+
+
+/* ---------------------------------
+7. SECTION(cta)
+--------------------------------- */
+
+#cta{
+    padding: 3% 0 3% 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* ---------------------------------
+8. FOOTER
+--------------------------------- */
+
+#footer{
+    background-color: #fd859b;
+    text-align: center;
+}
+
+.social-icon{
+    margin: 20px 10px;
+}
+
+.text-footer{
+    font-size: 1.5rem;
+}
+
+footer .icons{
+    content: "\f015";
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+footer .icons:hover{ 
+    -moz-transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg); 
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s; 
+    -moz-transition: all 0.2s; 
+    -o-transition: all 0.2s; 
+    -ms-transition: all 0.2s; 
+    transition: all 0.2s;
+}
